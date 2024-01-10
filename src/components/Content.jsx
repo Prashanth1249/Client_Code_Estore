@@ -441,7 +441,7 @@ export default function PersistentDrawerLeft() {
                     <Route exact path="/profile/orders" element={!login?(<Fragment><RegisterComponent/><ContentComponent/></Fragment>):<YourOrder/>} />
                     <Route exact path="/profile/info" element={!login?(<Fragment><RegisterComponent/><ContentComponent/></Fragment>):<PersonalInfoForm/>} />
                     <Route exact path="/profile/uploads" element={!login?(<Fragment><RegisterComponent/><ContentComponent/></Fragment>):<YourSell/>} /> */}
-                    <Route exact path='/' element={<Home login={login} setLogin={setLogin}/>}/>
+                    <Route exact path='/home' element={<Home login={login} setLogin={setLogin}/>}/>
                     <Route exact path='/' element={<Home login={login} setLogin={setLogin}/>}/>
                     <Route exact path="/get/book" element={<BookStore/>}/>
                     <Route exact path="/login" element={(<Fragment><LoginPage/> <ContentComponent/></Fragment>)} />
