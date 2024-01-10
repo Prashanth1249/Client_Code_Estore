@@ -441,16 +441,16 @@ export default function PersistentDrawerLeft() {
                     <Route exact path="/profile/orders" element={!login?(<Fragment><RegisterComponent/><ContentComponent/></Fragment>):<YourOrder/>} />
                     <Route exact path="/profile/info" element={!login?(<Fragment><RegisterComponent/><ContentComponent/></Fragment>):<PersonalInfoForm/>} />
                     <Route exact path="/profile/uploads" element={!login?(<Fragment><RegisterComponent/><ContentComponent/></Fragment>):<YourSell/>} /> */}
-                    <Route exact path='/home' element={<Home login={login} setLogin={setLogin}/>}/>
-                    <Route exact path='/' element={<Home login={login} setLogin={setLogin}/>}/>
-                    <Route exact path="/get/book" element={<BookStore/>}/>
-                    <Route exact path="/login" element={(<Fragment><LoginPage/> <ContentComponent/></Fragment>)} />
-                    <Route exact path="/register" element={(<Fragment><RegisterComponent/> <ContentComponent/></Fragment>)} />
-                    <Route exact path='/upload/book' element={<SellBooksForm/>}/>
-                    <Route exact path="/profile/orders" element={<YourOrder/>} />
-                     <Route exact path="/about" element={<AboutPage/>}/>
-                    <Route exact path="/profile/uploads" element={<YourSell/>}/>
-                    <Route exact path="/profile/info" element={<PersonalInfoForm/>} />
+                    <Route exact path='https://estorerguktbasar.onrender.com/home' element={<Home login={login} setLogin={setLogin}/>}/>
+                    <Route exact path='https://estorerguktbasar.onrender.com/' element={<Home login={login} setLogin={setLogin}/>}/>
+                    <Route exact path="https://estorerguktbasar.onrender.com/get/book" element={<BookStore/>}/>
+                    <Route exact path="https://estorerguktbasar.onrender.com/login" element={(<Fragment><LoginPage/> <ContentComponent/></Fragment>)} />
+                    <Route exact path="https://estorerguktbasar.onrender.com/register" element={(<Fragment><RegisterComponent/> <ContentComponent/></Fragment>)} />
+                    <Route exact path='https://estorerguktbasar.onrender.com/upload/book' element={<SellBooksForm/>}/>
+                    <Route exact path="https://estorerguktbasar.onrender.com/profile/orders" element={<YourOrder/>} />
+                     <Route exact path="https://estorerguktbasar.onrender.com/about" element={<AboutPage/>}/>
+                    <Route exact path="https://estorerguktbasar.onrender.com/profile/uploads" element={<YourSell/>}/>
+                    <Route exact path="https://estorerguktbasar.onrender.com/profile/info" element={<PersonalInfoForm/>} />
                 </Routes>
             </Router>
         </Main>
